@@ -108,12 +108,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const btn = contactForm.querySelector('button[type="submit"]');
     const originalText = btn.textContent;
 
-    btn.textContent = 'Sending...';
+    btn.textContent = 'Enviando...';
     btn.disabled = true;
 
-    // Simulate form submission (replace with real endpoint)
+    // Simular envio de formulario (reemplazar con endpoint real)
     setTimeout(() => {
-      btn.textContent = 'Message Sent!';
+      btn.textContent = 'Mensaje Enviado!';
       btn.style.background = '#22c55e';
       contactForm.reset();
 
