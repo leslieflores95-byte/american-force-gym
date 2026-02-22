@@ -1,5 +1,5 @@
 /* ========================================
-   IronForge Gym — Stylesheet
+   American Force GYM — Stylesheet
    ======================================== */
 
 /* ---------- Reset & Base ---------- */
@@ -10,8 +10,8 @@
 }
 
 :root {
-  --accent: #e63946;
-  --accent-dark: #c1121f;
+  --accent: #f5c518;
+  --accent-dark: #d4a800;
   --bg-dark: #0a0a0a;
   --bg-section: #111111;
   --bg-card: #1a1a1a;
@@ -93,13 +93,15 @@ h3 { font-size: 1.25rem; font-weight: 700; }
 
 .btn-primary {
   background: var(--accent);
-  color: #fff;
+  color: #000;
+  font-weight: 700;
 }
 
 .btn-primary:hover {
   background: var(--accent-dark);
+  color: #000;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(230, 57, 70, 0.3);
+  box-shadow: 0 8px 24px rgba(245, 197, 24, 0.3);
 }
 
 .btn-outline {
@@ -123,11 +125,12 @@ h3 { font-size: 1.25rem; font-weight: 700; }
 .btn-nav {
   padding: 10px 24px;
   background: var(--accent);
-  color: #fff;
+  color: #000;
+  font-weight: 700;
   border-radius: var(--radius-sm);
 }
 
-.btn-nav:hover { background: var(--accent-dark); }
+.btn-nav:hover { background: var(--accent-dark); color: #000; }
 
 /* ---------- Navbar ---------- */
 .navbar {
@@ -208,8 +211,8 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   justify-content: center;
   overflow: hidden;
   background:
-    radial-gradient(ellipse at 20% 80%, rgba(230, 57, 70, 0.15) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(230, 57, 70, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 80%, rgba(245, 197, 24, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(245, 197, 24, 0.08) 0%, transparent 50%),
     var(--bg-dark);
 }
 
@@ -233,7 +236,7 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   color: var(--accent);
   margin-bottom: 24px;
   padding: 8px 20px;
-  border: 1px solid rgba(230, 57, 70, 0.3);
+  border: 1px solid rgba(245, 197, 24, 0.3);
   border-radius: 100px;
 }
 
@@ -337,7 +340,7 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(230, 57, 70, 0.1);
+  background: rgba(245, 197, 24, 0.1);
   border-radius: var(--radius-sm);
   color: var(--accent);
 }
@@ -389,7 +392,7 @@ h3 { font-size: 1.25rem; font-weight: 700; }
 
 .class-card:hover {
   background: var(--bg-card-hover);
-  border-color: rgba(230, 57, 70, 0.3);
+  border-color: rgba(245, 197, 24, 0.3);
   transform: translateY(-4px);
 }
 
@@ -399,7 +402,7 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(230, 57, 70, 0.1);
+  background: rgba(245, 197, 24, 0.1);
   border-radius: var(--radius-sm);
   color: var(--accent);
   margin-bottom: 20px;
@@ -440,7 +443,7 @@ h3 { font-size: 1.25rem; font-weight: 700; }
 
 .trainer-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(230, 57, 70, 0.3);
+  border-color: rgba(245, 197, 24, 0.3);
 }
 
 .trainer-image { margin-bottom: 20px; }
@@ -450,7 +453,7 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   height: 100px;
   margin: 0 auto;
   border-radius: 50%;
-  background: rgba(230, 57, 70, 0.1);
+  background: rgba(245, 197, 24, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -495,7 +498,7 @@ h3 { font-size: 1.25rem; font-weight: 700; }
 
 .price-card.featured {
   border-color: var(--accent);
-  background: linear-gradient(to bottom, rgba(230, 57, 70, 0.08), var(--bg-card));
+  background: linear-gradient(to bottom, rgba(245, 197, 24, 0.08), var(--bg-card));
   transform: scale(1.04);
 }
 
@@ -509,7 +512,7 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   left: 50%;
   transform: translateX(-50%);
   background: var(--accent);
-  color: #fff;
+  color: #000;
   font-size: 0.75rem;
   font-weight: 700;
   padding: 6px 20px;
@@ -588,7 +591,7 @@ h3 { font-size: 1.25rem; font-weight: 700; }
 
 .testimonial-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(230, 57, 70, 0.3);
+  border-color: rgba(245, 197, 24, 0.3);
 }
 
 .stars {
@@ -616,7 +619,7 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: rgba(230, 57, 70, 0.15);
+  background: rgba(245, 197, 24, 0.15);
   color: var(--accent);
   display: flex;
   align-items: center;
@@ -638,7 +641,7 @@ h3 { font-size: 1.25rem; font-weight: 700; }
 /* ---------- CTA ---------- */
 .cta {
   background:
-    radial-gradient(ellipse at center, rgba(230, 57, 70, 0.15) 0%, transparent 70%),
+    radial-gradient(ellipse at center, rgba(245, 197, 24, 0.15) 0%, transparent 70%),
     var(--bg-dark) !important;
   text-align: center;
 }
@@ -679,7 +682,7 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(230, 57, 70, 0.1);
+  background: rgba(245, 197, 24, 0.1);
   border-radius: var(--radius-sm);
   color: var(--accent);
 }
