@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IronForge Gym — Premier fitness center offering world-class training, expert coaches, and a community that pushes you to your best.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>IronForge Gym — Forge Your Strength</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">IRON<span>FORGE</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact" class="btn btn-nav">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="hero-tag">WELCOME TO IRONFORGE</p>
+      <h1>Forge Your <span class="text-accent">Strongest</span> Self</h1>
+      <p class="hero-desc">World-class equipment, expert coaching, and a relentless community. Your transformation starts here.</p>
+      <div class="hero-buttons">
+        <a href="#pricing" class="btn btn-primary">View Plans</a>
+        <a href="#about" class="btn btn-outline">Learn More</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="1500">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Members</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="12">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Expert Trainers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Weekly Classes</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M19 12l-7 7-7-7"/>
+      </svg>
+    </a>
+  </header>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">WHO WE ARE</p>
+        <h2>More Than a Gym — <span class="text-accent">A Movement</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>At IronForge, we believe strength isn't just physical — it's a mindset. Founded in 2018, we've built a space where beginners and elite athletes alike come to push past limits.</p>
+          <p>Our 15,000 sq ft facility features cutting-edge equipment, dedicated training zones, and a culture of support that makes every workout count.</p>
+          <div class="about-features">
+            <div class="feature">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div>
+                <h4>Open 5AM – 11PM</h4>
+                <p>Train on your schedule, 7 days a week</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+              <div>
+                <h4>Recovery Zone</h4>
+                <p>Sauna, cold plunge, and stretching area</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <h4>Community Events</h4>
+                <p>Monthly challenges, workshops, and socials</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="about-image-placeholder">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.5 6.5h11v11h-11z"/><circle cx="16" cy="8" r="1.5"/><path d="M6.5 17.5l4-5 3 3.5 2-2.5 2 4"/></svg>
+            <span>Gym Interior</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Classes Section -->
+  <section class="section classes" id="classes">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">OUR PROGRAMS</p>
+        <h2>Train Your Way with <span class="text-accent">Expert-Led Classes</span></h2>
+      </div>
+      <div class="classes-grid">
+        <div class="class-card">
+          <div class="class-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 4v16M18 4v16M2 8h4M18 8h4M2 16h4M18 16h4M6 12h12"/></svg>
+          </div>
+          <h3>Strength Training</h3>
+          <p>Build raw power with free weights, machines, and progressive overload programming guided by certified coaches.</p>
+          <span class="class-meta">Mon / Wed / Fri &bull; 60 min</span>
+        </div>
+        <div class="class-card">
+          <div class="class-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>HIIT &amp; Conditioning</h3>
+          <p>High-intensity interval sessions designed to torch calories, boost endurance, and improve cardiovascular health.</p>
+          <span class="class-meta">Tue / Thu / Sat &bull; 45 min</span>
+        </div>
+        <div class="class-card">
+          <div class="class-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>CrossFit</h3>
+          <p>Functional movements at high intensity. Every workout is different, every day is a new challenge.</p>
+          <span class="class-meta">Daily &bull; 50 min</span>
+        </div>
+        <div class="class-card">
+          <div class="class-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          </div>
+          <h3>Boxing &amp; Kickboxing</h3>
+          <p>Learn striking fundamentals while getting an incredible full-body workout in our dedicated combat zone.</p>
+          <span class="class-meta">Mon / Wed / Sat &bull; 60 min</span>
+        </div>
+        <div class="class-card">
+          <div class="class-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+          </div>
+          <h3>Yoga &amp; Mobility</h3>
+          <p>Restore balance and flexibility. Our yoga classes complement heavy training and help prevent injury.</p>
+          <span class="class-meta">Tue / Thu / Sun &bull; 55 min</span>
+        </div>
+        <div class="class-card">
+          <div class="class-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg>
+          </div>
+          <h3>Personal Training</h3>
+          <p>One-on-one sessions tailored to your goals. Your trainer, your program, your results.</p>
+          <span class="class-meta">By appointment &bull; 60 min</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trainers Section -->
+  <section class="section trainers" id="trainers">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">THE TEAM</p>
+        <h2>Meet Your <span class="text-accent">Coaches</span></h2>
+      </div>
+      <div class="trainers-grid">
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <div class="trainer-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+          </div>
+          <h3>Marcus Rivera</h3>
+          <p class="trainer-role">Head Coach — Strength & Conditioning</p>
+          <p class="trainer-bio">CSCS certified with 10+ years of experience training athletes from amateur to professional level.</p>
+        </div>
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <div class="trainer-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+          </div>
+          <h3>Sarah Chen</h3>
+          <p class="trainer-role">HIIT & CrossFit Specialist</p>
+          <p class="trainer-bio">Former competitive CrossFit athlete and certified nutrition coach who brings energy to every session.</p>
+        </div>
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <div class="trainer-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+          </div>
+          <h3>James Okafor</h3>
+          <p class="trainer-role">Boxing & Combat Coach</p>
+          <p class="trainer-bio">Professional boxing background with a passion for teaching technique and building confidence in every fighter.</p>
+        </div>
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <div class="trainer-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+          </div>
+          <h3>Elena Vasquez</h3>
+          <p class="trainer-role">Yoga & Mobility Expert</p>
+          <p class="trainer-bio">RYT-500 certified yoga instructor specializing in athletic recovery and injury prevention.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">MEMBERSHIP</p>
+        <h2>Simple, Transparent <span class="text-accent">Pricing</span></h2>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-header">
+            <h3>Starter</h3>
+            <p class="price-desc">Perfect for getting started</p>
+          </div>
+          <div class="price-amount">
+            <span class="currency">$</span><span class="amount">29</span><span class="period">/mo</span>
+          </div>
+          <ul class="price-features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Full gym access
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Locker room &amp; showers
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Free WiFi
+            </li>
+            <li class="disabled">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Group classes
+            </li>
+            <li class="disabled">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Personal training
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-full">Get Started</a>
+        </div>
+        <div class="price-card featured">
+          <div class="price-badge">Most Popular</div>
+          <div class="price-header">
+            <h3>Pro</h3>
+            <p class="price-desc">For dedicated athletes</p>
+          </div>
+          <div class="price-amount">
+            <span class="currency">$</span><span class="amount">59</span><span class="period">/mo</span>
+          </div>
+          <ul class="price-features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Everything in Starter
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Unlimited group classes
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Recovery zone access
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Nutrition consultation
+            </li>
+            <li class="disabled">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Personal training
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-full">Get Started</a>
+        </div>
+        <div class="price-card">
+          <div class="price-header">
+            <h3>Elite</h3>
+            <p class="price-desc">The complete experience</p>
+          </div>
+          <div class="price-amount">
+            <span class="currency">$</span><span class="amount">99</span><span class="period">/mo</span>
+          </div>
+          <ul class="price-features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Everything in Pro
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              4 personal training sessions/mo
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Custom workout programming
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Guest passes (2/mo)
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Priority class booking
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-full">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">TESTIMONIALS</p>
+        <h2>What Our <span class="text-accent">Members</span> Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-text">"IronForge completely changed my fitness journey. The coaches actually care about your progress, and the community keeps me coming back every day."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DM</div>
+            <div>
+              <strong>David Martinez</strong>
+              <span>Member since 2021</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-text">"I've tried every gym in the city. None come close to IronForge. The equipment is top-notch, the classes are intense, and the vibe is unmatched."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AK</div>
+            <div>
+              <strong>Ashley Kim</strong>
+              <span>Member since 2022</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-text">"Lost 30 pounds in 6 months with the Pro plan. The group classes and nutrition guidance made all the difference. Best investment in myself."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RT</div>
+            <div>
+              <strong>Ryan Thompson</strong>
+              <span>Member since 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta">
+    <div class="container cta-content">
+      <h2>Ready to Start Your <span class="text-accent">Transformation</span>?</h2>
+      <p>Join IronForge today and get your first week free. No contracts, no commitments — just results.</p>
+      <a href="#contact" class="btn btn-primary btn-large">Claim Your Free Week</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">GET IN TOUCH</p>
+        <h2>Start Your <span class="text-accent">Journey</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>742 Fitness Ave, Suite 100<br>Austin, TX 78701</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p>(512) 555-0142</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>info@ironforgegym.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <h4>Hours</h4>
+              <p>Mon – Fri: 5:00 AM – 11:00 PM<br>Sat – Sun: 7:00 AM – 9:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" required placeholder="John">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+          </div>
+          <div class="form-group">
+            <label for="interest">I'm interested in</label>
+            <select id="interest" name="interest">
+              <option value="" disabled selected>Select a plan</option>
+              <option value="starter">Starter — $29/mo</option>
+              <option value="pro">Pro — $59/mo</option>
+              <option value="elite">Elite — $99/mo</option>
+              <option value="tour">Just a tour</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message (Optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your fitness goals..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">IRON<span>FORGE</span></a>
+          <p>Building stronger bodies and minds since 2018. Join the community that never stops pushing forward.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="#classes">Strength Training</a></li>
+            <li><a href="#classes">HIIT & Conditioning</a></li>
+            <li><a href="#classes">CrossFit</a></li>
+            <li><a href="#classes">Boxing</a></li>
+            <li><a href="#classes">Yoga & Mobility</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Hours</h4>
+          <ul>
+            <li>Mon – Fri: 5AM – 11PM</li>
+            <li>Sat – Sun: 7AM – 9PM</li>
+            <li>Holidays: 8AM – 6PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 IronForge Gym. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
