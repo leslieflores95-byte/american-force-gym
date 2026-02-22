@@ -158,13 +158,14 @@ h3 { font-size: 1.25rem; font-weight: 700; }
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 900;
-  letter-spacing: 0.05em;
-  color: var(--text-primary);
+  display: flex;
+  align-items: center;
 }
 
-.logo span { color: var(--accent); }
+.logo-img {
+  height: 60px;
+  width: auto;
+}
 
 .nav-links {
   display: flex;
