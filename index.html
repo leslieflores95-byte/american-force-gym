@@ -25,6 +25,7 @@
         <li><a href="#trainers">Entrenadores</a></li>
         <li><a href="#pricing">Precios</a></li>
         <li><a href="#testimonials">Testimonios</a></li>
+        <li><a href="#quejas">Quejas</a></li>
         <li><a href="#contact" class="btn btn-nav">Comenzar</a></li>
       </ul>
     </div>
@@ -391,6 +392,76 @@
     </div>
   </section>
 
+  <!-- Buzon de Quejas Anonimas -->
+  <section class="section complaints" id="quejas">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">TU VOZ IMPORTA</p>
+        <h2>Buzon de Quejas <span class="text-accent">Anonimas</span></h2>
+        <p class="section-desc">Tu opinion nos ayuda a mejorar. Puedes enviar tu queja de forma completamente anonima. No pedimos tu nombre ni tus datos.</p>
+      </div>
+      <div class="complaints-wrapper">
+        <div class="complaints-info">
+          <div class="complaints-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Confidencial y Seguro</h3>
+          <ul class="complaints-list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              100% anonimo — no pedimos datos personales
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Tu queja llega directamente a la administracion
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Nos comprometemos a tomar accion
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Puedes reportar sobre cualquier tema
+            </li>
+          </ul>
+        </div>
+        <form class="complaints-form" id="complaintsForm" action="https://formsubmit.co/lesliefgym@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nueva Queja Anonima — American Force GYM">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="#">
+          <input type="text" name="_honey" style="display:none">
+          <div class="form-group">
+            <label for="queja-sede">Sede</label>
+            <select id="queja-sede" name="sede" required>
+              <option value="" disabled selected>Selecciona la sede</option>
+              <option value="Villa El Salvador">Villa El Salvador</option>
+              <option value="Lurin">Lurin</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="queja-tipo">Tipo de queja</label>
+            <select id="queja-tipo" name="tipo_queja" required>
+              <option value="" disabled selected>Selecciona el tipo</option>
+              <option value="Instalaciones">Instalaciones / Limpieza</option>
+              <option value="Atencion">Atencion al cliente</option>
+              <option value="Entrenadores">Entrenadores / Staff</option>
+              <option value="Equipos">Equipos / Maquinas</option>
+              <option value="Seguridad">Seguridad</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="queja-mensaje">Describe tu queja</label>
+            <textarea id="queja-mensaje" name="mensaje" rows="5" placeholder="Cuentanos que sucedio y como podemos mejorar..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="complaintsBtn">Enviar Queja Anonima</button>
+          <p class="complaints-disclaimer">No almacenamos tu IP ni informacion personal. Tu queja es completamente anonima.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <!-- Contacto -->
   <section class="section contact" id="contact">
     <div class="container">
@@ -428,44 +499,49 @@
             </div>
           </div>
         </div>
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/lesliefgym@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nuevo Mensaje de Contacto — American Force GYM">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="#">
+          <input type="text" name="_honey" style="display:none">
           <div class="form-row">
             <div class="form-group">
               <label for="firstName">Nombre</label>
-              <input type="text" id="firstName" name="firstName" required placeholder="Juan">
+              <input type="text" id="firstName" name="Nombre" required placeholder="Juan">
             </div>
             <div class="form-group">
               <label for="lastName">Apellido</label>
-              <input type="text" id="lastName" name="lastName" required placeholder="Perez">
+              <input type="text" id="lastName" name="Apellido" required placeholder="Perez">
             </div>
           </div>
           <div class="form-group">
             <label for="phone">Telefono</label>
-            <input type="tel" id="phone" name="phone" placeholder="9XX XXX XXX">
+            <input type="tel" id="phone" name="Telefono" placeholder="9XX XXX XXX">
           </div>
           <div class="form-group">
             <label for="sede">Sede</label>
-            <select id="sede" name="sede">
+            <select id="sede" name="Sede">
               <option value="" disabled selected>Selecciona una sede</option>
-              <option value="ves">Villa El Salvador</option>
-              <option value="lurin">Lurin</option>
+              <option value="Villa El Salvador">Villa El Salvador</option>
+              <option value="Lurin">Lurin</option>
             </select>
           </div>
           <div class="form-group">
             <label for="interest">Me interesa</label>
-            <select id="interest" name="interest">
+            <select id="interest" name="Plan_Interes">
               <option value="" disabled selected>Selecciona un plan</option>
-              <option value="clase-libre">Clase Libre — S/5</option>
-              <option value="interdiario">Interdiario — S/50/mes</option>
-              <option value="lun-sab">Lunes a Sabado — S/90/mes</option>
-              <option value="tour">Solo un recorrido</option>
+              <option value="Clase Libre — S/5">Clase Libre — S/5</option>
+              <option value="Interdiario — S/50/mes">Interdiario — S/50/mes</option>
+              <option value="Lunes a Sabado — S/90/mes">Lunes a Sabado — S/90/mes</option>
+              <option value="Solo un recorrido">Solo un recorrido</option>
             </select>
           </div>
           <div class="form-group">
             <label for="message">Mensaje (Opcional)</label>
-            <textarea id="message" name="message" rows="4" placeholder="Cuentanos sobre tus objetivos de fitness..."></textarea>
+            <textarea id="message" name="Mensaje" rows="4" placeholder="Cuentanos sobre tus objetivos de fitness..."></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+          <button type="submit" class="btn btn-primary btn-full" id="contactBtn">Enviar Mensaje</button>
         </form>
       </div>
     </div>
@@ -501,6 +577,7 @@
             <li><a href="#trainers">Entrenadores</a></li>
             <li><a href="#pricing">Precios</a></li>
             <li><a href="#contact">Contacto</a></li>
+            <li><a href="#quejas">Buzon de Quejas</a></li>
           </ul>
         </div>
         <div class="footer-links">

@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---------- Scroll reveal (Intersection Observer) ----------
   const revealElements = document.querySelectorAll(
-    '.class-card, .trainer-card, .price-card, .testimonial-card, .about-text, .about-image, .contact-info, .contact-form, .cta-content, .feature'
+    '.class-card, .trainer-card, .price-card, .testimonial-card, .about-text, .about-image, .contact-info, .contact-form, .cta-content, .feature, .complaints-info, .complaints-form'
   );
 
   revealElements.forEach(el => el.classList.add('reveal'));
@@ -99,31 +99,113 @@ document.addEventListener('DOMContentLoaded', () => {
     statsObserver.observe(heroStats);
   }
 
-  // ---------- Contact form handling ----------
+  // ---------- Contact form handling (Formsubmit) ----------
   const contactForm = document.getElementById('contactForm');
 
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
 
-    const btn = contactForm.querySelector('button[type="submit"]');
-    const originalText = btn.textContent;
+      const btn = document.getElementById('contactBtn');
+      const originalText = btn.textContent;
+      btn.textContent = 'Enviando...';
+      btn.disabled = true;
 
-    btn.textContent = 'Enviando...';
-    btn.disabled = true;
+      const formData = new FormData(contactForm);
 
-    // Simular envio de formulario (reemplazar con endpoint real)
-    setTimeout(() => {
-      btn.textContent = 'Mensaje Enviado!';
-      btn.style.background = '#22c55e';
-      contactForm.reset();
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
 
-      setTimeout(() => {
-        btn.textContent = originalText;
-        btn.style.background = '';
-        btn.disabled = false;
-      }, 3000);
-    }, 1000);
-  });
+        if (response.ok) {
+          btn.textContent = 'Mensaje Enviado!';
+          btn.style.background = '#22c55e';
+          contactForm.reset();
+
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            btn.disabled = false;
+          }, 4000);
+        } else {
+          btn.textContent = 'Error al enviar';
+          btn.style.background = '#ef4444';
+
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            btn.disabled = false;
+          }, 3000);
+        }
+      } catch (error) {
+        btn.textContent = 'Error de conexion';
+        btn.style.background = '#ef4444';
+
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 3000);
+      }
+    });
+  }
+
+  // ---------- Complaints form handling (Formsubmit) ----------
+  const complaintsForm = document.getElementById('complaintsForm');
+
+  if (complaintsForm) {
+    complaintsForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const btn = document.getElementById('complaintsBtn');
+      const originalText = btn.textContent;
+      btn.textContent = 'Enviando...';
+      btn.disabled = true;
+
+      const formData = new FormData(complaintsForm);
+
+      try {
+        const response = await fetch(complaintsForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          btn.textContent = 'Queja Enviada!';
+          btn.style.background = '#22c55e';
+          complaintsForm.reset();
+
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            btn.disabled = false;
+          }, 4000);
+        } else {
+          btn.textContent = 'Error al enviar';
+          btn.style.background = '#ef4444';
+
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            btn.disabled = false;
+          }, 3000);
+        }
+      } catch (error) {
+        btn.textContent = 'Error de conexion';
+        btn.style.background = '#ef4444';
+
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 3000);
+      }
+    });
+  }
 
   // ---------- Active nav link on scroll ----------
   const sections = document.querySelectorAll('section[id]');
