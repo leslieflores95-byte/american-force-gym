@@ -725,6 +725,17 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   line-height: 1.6;
 }
 
+.whatsapp-link {
+  color: #25d366;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.whatsapp-link:hover {
+  color: #128c7e;
+  text-decoration: underline;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
