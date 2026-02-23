@@ -967,6 +967,65 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   color: var(--text-muted);
 }
 
+/* ---------- Sede Selector (Index) ---------- */
+.sede-selector {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.sede-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px 28px;
+  transition: all var(--transition);
+  text-decoration: none;
+  color: inherit;
+}
+
+.sede-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(245, 197, 24, 0.15);
+}
+
+.sede-card-icon {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(245, 197, 24, 0.1);
+  border-radius: 50%;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.sede-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.sede-card-address {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .sede-selector {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
 /* ---------- Animations (Scroll Reveal) ---------- */
 .reveal {
   opacity: 0;
