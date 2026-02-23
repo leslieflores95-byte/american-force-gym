@@ -502,6 +502,19 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   margin-bottom: 2rem;
 }
 
+.pricing-sede-lurin {
+  margin-top: 3.5rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--border);
+}
+
+.pricing-note {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 2.5rem;
+}
+
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
